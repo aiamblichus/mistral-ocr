@@ -2,12 +2,12 @@
 
 <img align="right" src="./vibecoded.png" width="200">
 
-Extract text from PDFs and images using Mistral's powerful OCR API.
+Extract text from PDFs and images using Mistral's OCR API.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.13+](https://img.shields.io/badge/python-3.13+-blue.svg)](https://www.python.org/downloads/)
 
-Mistral OCR is a command-line tool that leverages Mistral's state-of-the-art OCR technology to extract text content from PDFs and images. It produces clean markdown output and supports batch processing with rich progress indicators.
+Mistral OCR is a command-line tool that leverages Mistral's OCR technology to extract text content from PDFs and images. It produces clean markdown output and supports batch processing.
 
 ## ✨ Features
 
@@ -17,7 +17,6 @@ Mistral OCR is a command-line tool that leverages Mistral's state-of-the-art OCR
 - **Rich CLI**: Beautiful progress indicators and colored output
 - **Flexible Output**: Save extracted content as markdown files
 - **Metadata Export**: Optional JSON metadata for each processed file
-- **Type-Safe**: Built with modern Python and Pydantic
 
 ## 🚀 Quick Start
 
@@ -56,13 +55,13 @@ export MISTRAL_API_KEY="your-api-key-here"
 Process a single PDF:
 
 ```bash
-mistral-ocr ocr document.pdf
+mistral-ocr document.pdf
 ```
 
 Process multiple files:
 
 ```bash
-mistral-ocr ocr file1.pdf file2.jpg image.png
+mistral-ocr file1.pdf file2.jpg image.png
 ```
 
 ### Advanced Options
@@ -70,19 +69,19 @@ mistral-ocr ocr file1.pdf file2.jpg image.png
 Specify output directory:
 
 ```bash
-mistral-ocr ocr --output-dir ./output *.pdf
+mistral-ocr --output-dir ./output *.pdf
 ```
 
 Use a specific OCR model:
 
 ```bash
-mistral-ocr ocr --model mistral-ocr-latest document.pdf
+mistral-ocr --model mistral-ocr-latest document.pdf
 ```
 
 Include base64 image data (increases API cost):
 
 ```bash
-mistral-ocr ocr --include-image-base64 screenshot.png
+mistral-ocr --include-image-base64 screenshot.png
 ```
 
 ### Output
