@@ -1,5 +1,7 @@
 # Mistral OCR
 
+<img align="right" src="./vibecoded.png" width="200">
+
 Extract text from PDFs and images using Mistral's powerful OCR API.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
