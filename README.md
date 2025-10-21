@@ -22,22 +22,12 @@ Mistral OCR is a command-line tool that leverages Mistral's OCR technology to ex
 
 ### Installation
 
-#### Using uv (Recommended)
-
 ```bash
 # Install uv if you don't have it
 curl -LsSf https://astral.sh/uv/install.sh | sh
 
 # Clone and install
-git clone https://github.com/yourusername/mistral-ocr.git
-cd mistral-ocr
-make dev-setup
-```
-
-#### Using pip
-
-```bash
-pip install mistral-ocr
+uv tool install "mistral-ocr @ https://github.com/aiamblichus/mistral-ocr.git"
 ```
 
 ### API Key Setup
